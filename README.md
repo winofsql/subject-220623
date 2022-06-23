@@ -3,7 +3,7 @@
 ### $.ajax ( jQuery ) : フォームを偽造するサーバへの送信
 ```javascript
     $.ajax({
-        url: "./upload.php",
+        url: "http://localhost/php-0623-01/ajax.php",
         type: "POST",
         data: formData,
         processData: false,  // jQuery がデータを処理しないよう指定
