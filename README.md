@@ -2,6 +2,8 @@
 
 ### $.ajax ( jQuery ) : フォームを偽造するサーバへの送信
 ```javascript
+    var formData = new FormData();
+
     $.ajax({
         url: "http://localhost/php-0623-01/ajax.php",
         type: "POST",
