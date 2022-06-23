@@ -1,6 +1,6 @@
 # subject-220624
 
-### $.ajax ( jQuery ) : フォームを偽造するサーバへの送信
+### $.ajax ( jQuery ) : フォームを偽装するサーバへの送信
 ```javascript
     var formData = new FormData();
 
