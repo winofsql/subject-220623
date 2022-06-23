@@ -102,3 +102,25 @@ file_put_contents("upload.log", print_r($_FILES, true));
     "id": "<?= $_POST["id"] ?>"
 }
 ```
+
+### ファイルアップロード実装 ajax.php
+```php
+<?php
+header( "Content-Type: application/json; charset=utf-8" );
+header( "Access-Control-Allow-Origin: *" );
+
+file_put_contents("upload.log", print_r($_FILES, true));
+
+@move_uploaded_file( $_FILES['upload']['tmp_name'], "test.dat" );
+
+?>
+{
+    "status": "ok",
+    "id": "<?= $_POST["id"] ?>"
+}
+```
+
+
+
+
+
