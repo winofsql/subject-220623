@@ -4,6 +4,8 @@
 ```javascript
     var formData = new FormData();
 
+    formData.append("id", "こんにちは" );
+
     $.ajax({
         url: "http://localhost/php-0623-01/ajax.php",
         type: "POST",
@@ -40,6 +42,7 @@ header( "Access-Control-Allow-Origin: *" );
 
 ?>
 {
-    "status": "ok"
+    "status": "ok",
+    "id": "<?= $_POST["id"] ?>"
 }
 ```
