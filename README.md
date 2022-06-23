@@ -87,3 +87,18 @@ function file_upload() {
 }
 </script>
 ```
+
+### ファイルアップロード確認用 ajax.php
+```php
+<?php
+header( "Content-Type: application/json; charset=utf-8" );
+header( "Access-Control-Allow-Origin: *" );
+
+file_put_contents("upload.log", print_r($_FILES, true));
+
+?>
+{
+    "status": "ok",
+    "id": "<?= $_POST["id"] ?>"
+}
+```
